@@ -1,0 +1,73 @@
+{
+  "idea": {
+    "title": "Show HN: Forgot the Command? Stay in the Terminal",
+    "source_url": "https://humansh.com/",
+    "source_platform": "Hacker News Show HN",
+    "description": "Show HN: Forgot the Command? Stay in the Terminal - This idea involves creating a terminal emulator that stays in the foreground even when the user is not actively using it, making it easier to run and manage commands without having to switch between applications.",
+    "suggested_language": "JavaScript"
+  },
+  "spec": {
+    "name": "Stay In Terminal",
+    "slug": "stay-in-terminal",
+    "language": "JavaScript",
+    "description": "Show HN: Forgot the Command? Stay in the Terminal - This idea involves creating a terminal emulator that stays in the foreground even when the user is not actively using it, making it easier to run and manage commands without having to switch between applications.",
+    "problem": "To provide a persistent and user-friendly terminal experience that stays in the foreground even when the user is not actively using it, making it easier to run and manage commands without having to switch between applications.",
+    "files": [
+      {
+        "path": "index.js",
+        "purpose": "Main script"
+      },
+      {
+        "path": "Terminal.js",
+        "purpose": "Terminal class"
+      },
+      {
+        "path": "Command.js",
+        "purpose": "Command class"
+      },
+      {
+        "path": "View.js",
+        "purpose": "Terminal view"
+      },
+      {
+        "path": "Renderer.js",
+        "purpose": "Terminal rendering"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "file": "index.js",
+      "tool": "node --check",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "Terminal.js",
+      "tool": "node --check",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "Command.js",
+      "tool": "node --check",
+      "ok": false,
+      "error": "c:\\projects saad\\code cladu poject\\projt gent\\generated\\stay-in-terminal\\Command.js:3\n  constructor(name, arguments) {\n                    ^^^^^^^^^\n\nSyntaxError: Unexpected eval or arguments in strict mode\n    at wrapSafe (node:internal/modules/cjs/loader:1713:18)\n    at checkSyntax (node:internal/main/check_syntax:78:3)\n\nNode.js v22.23.2"
+    },
+    {
+      "file": "View.js",
+      "tool": "node --check",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "Renderer.js",
+      "tool": "node --check",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "engine": "ollama (qwen2.5-coder:3b)",
+  "generated_at": "2026-08-27 13:48:21",
+  "project_dir": "c:\\projects saad\\code cladu poject\\projt gent\\generated\\stay-in-terminal"
+}
